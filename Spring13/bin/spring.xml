@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="answer1" class="answer.Answer">
+<constructor-arg value = "7"></constructor-arg>
+<constructor-arg value="Spring is a framework of frameworks"></constructor-arg>
+<constructor-arg value="3/11/2018"></constructor-arg>
+</bean>
+
+<bean id="answer2" class="answer.Answer">
+<constructor-arg value = "17"></constructor-arg>
+<constructor-arg value="Spring is a lightweight framework"></constructor-arg>
+<constructor-arg value="2/11/2018"></constructor-arg>
+</bean>
+
+<bean id="user1" class="user.User">
+<constructor-arg value="7"></constructor-arg>
+<constructor-arg value="Aman"></constructor-arg>
+<constructor-arg value="aman.khandelwal@st.niituniversity.in"></constructor-arg>
+</bean>
+
+<bean id="user2" class="user.User">
+<constructor-arg value="17"></constructor-arg>
+<constructor-arg value="Apar"></constructor-arg>
+<constructor-arg value="apar.khandelwal@st.niituniversity.in"></constructor-arg>
+</bean>
+
+<bean id="question" class="demo.Question">
+<constructor-arg value="1"></constructor-arg>
+<constructor-arg value="What is Spring?"></constructor-arg>
+<constructor-arg>
+<map>
+<entry key-ref="answer1" value-ref="user1"></entry>
+<entry key-ref="answer2" value-ref="user2"></entry>
+</map>
+</constructor-arg>
+</bean>
+</beans>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" name="antdemo">
+<target name = "run" depends="compile">
+<java classname="p1.aman.AntDemo">
+<classpath path= "staging"/>
+</java>
+</target>
+<target name ="compile">
+<javac includeantruntime="false" srcdir="./src" destdir="staging"/>
+</target>
+</project>

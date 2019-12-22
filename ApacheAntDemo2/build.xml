@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name = "myprogram" default="run">
+<target name ="run" depends="compile">
+<java classname = "p1.Test">
+<classpath path= "staging"/>
+</java>
+</target>
+	
+<target name = "compile">
+<javac includeantruntime="false" destdir="staging" srcdir = "./src"/>
+</target>
+</project>

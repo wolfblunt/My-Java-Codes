@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+body {
+  background-color: #222;
+}
+.plate {
+  width: 410px;
+  margin: 10% auto;
+}
+
+.script {
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+
+.script span {
+  background-color: #222;
+  padding: 0 0.5em;
+}
+
+
+.text1 {
+  font-size: 30px;
+}
+.text2 {
+  font-size: 40px;
+}

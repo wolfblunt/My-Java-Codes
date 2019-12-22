@@ -1,0 +1,54 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Exo+2:700');
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background: url("https://wallpaper-house.com/data/out/7/wallpaper2you_162965.jpg");
+  background-color: #212121;
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+ h1 {
+  color: skyblue;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.p1 {
+  max-width: 700px;
+  min-height: 50px;
+  padding: 0;
+  color: whitesmoke;
+  font-family: OpenSans;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+/* img {
+	width : 300px;
+	
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}  */
+
+div.polaroid {
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}

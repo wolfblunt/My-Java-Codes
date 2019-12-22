@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Annotation_xml</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet-mapping>
+  <servlet-name>One</servlet-name>
+  <url-pattern>/a</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>One</servlet-name>
+  <servlet-class>First</servlet-class>
+  <init-param>
+  <param-name>name</param-name>
+  <param-value>Aman</param-value>
+  </init-param>
+  
+  <init-param>
+  <param-name>address</param-name>
+  <param-value>Jaipur</param-value>
+  </init-param>
+  
+  <init-param>
+  <param-name>phone</param-name>
+  <param-value>7877159289</param-value>
+  </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Two</servlet-name>
+  <url-pattern>/b</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Two</servlet-name>
+  <servlet-class>Second</servlet-class>
+  <init-param>
+  <param-name>name</param-name>
+  <param-value>Aman</param-value>
+  </init-param>
+  
+  <init-param>
+  <param-name>address</param-name>
+  <param-value>Jaipur</param-value>
+  </init-param>
+  
+  <init-param>
+  <param-name>phone</param-name>
+  <param-value>7073435130</param-value>
+  </init-param>
+  </servlet>
+  
+</web-app>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="question" class="demo.Question">
+<constructor-arg value="7"></constructor-arg>
+<constructor-arg value="What is Spring"></constructor-arg>
+<constructor-arg>
+<map>
+<entry key="framework of frameworks" value="Aman"></entry>
+<entry key="Spring is a lightweight framework" value="Rod Johnson"></entry>
+</map>
+</constructor-arg>
+</bean>
+
+
+
+</beans>

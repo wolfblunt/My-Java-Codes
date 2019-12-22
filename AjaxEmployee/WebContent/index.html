@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 10px;
+}
+td{
+	text-align:left;
+}
+</style>
+</head>
+<body>
+	<form action ="">
+	<select name = "customers" onchange="showCustomer(this.value)">
+	<option value="">Select a customer</option>
+	<option value="123">Khandelwal Limited</option>
+	<option value="345">Alfreds Futterkiste</option>
+	</select>
+	</form>
+	<br>
+	<div id="txtHint">Customer info will be listed here...</div>
+	
+	<script>
+		function showCustomer(str) {
+			var xhttp;
+			if (str=="") {
+				document.getElementById("txtHint").innerHTML = "";
+				return;
+			}
+			xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if(this.readyState == 4 && this.status == 200) {
+					document.getElementById("txtHint").innerHTML = this.responseText;
+				}
+			};
+			xhttp.open("GET", "GetCustomer.jsp?q="+str,true);
+			xhttp.send();
+		}
+	</script>
+</body>
+</html>

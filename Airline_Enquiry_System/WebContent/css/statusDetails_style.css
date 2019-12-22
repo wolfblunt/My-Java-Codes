@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+body {
+  margin: 0;
+  padding: 0;
+   background: url(plane6.jpg) no-repeat 0 30% ;
+   background-size: cover;
+    /* will also set the opacity of the link text */        
+    opacity: 2;
+    filter: alpha(opacity=50);
+}
+
+#main{
+	position:centre;
+	margin-top: 5000 px;
+}

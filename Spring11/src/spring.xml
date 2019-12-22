@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="ans1" class="demo2.Answer">
+<constructor-arg value="123"></constructor-arg>
+<constructor-arg value="GOT"></constructor-arg>
+<constructor-arg value="Aman"></constructor-arg>
+</bean>
+
+<bean id="ans2" class="demo2.Answer">
+<constructor-arg value="126"></constructor-arg>
+<constructor-arg value="Flash"></constructor-arg>
+<constructor-arg value="Aman Khandelwal"></constructor-arg>
+</bean>
+
+<bean id="question" class="demo1.Question">
+
+<constructor-arg value="007"></constructor-arg>
+<constructor-arg value="Aman"></constructor-arg>
+<constructor-arg>
+<list>
+<ref bean="ans1"/>
+<ref bean="ans2"/>
+</list>
+
+</constructor-arg>
+
+</bean>
+
+
+</beans>
